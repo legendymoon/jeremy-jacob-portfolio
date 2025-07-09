@@ -3,38 +3,31 @@ import React, { useEffect, useState } from 'react';
 
 const workHistoryContent = [
   {
-    company: 'Ramp',
-    duration: '2023 – Present',
-    role: 'Senior Software Engineer',
-    description: `In 2023, I joined Ramp as a Senior Software Engineer and founding member of its AI efforts. 
-    I led the development of GPT-4-powered workflows that automated expense processing and contract analysis, while contributing to launches like Ramp Procurement and Treasury. 
-    During this time, Ramp grew to 40,000 customers and a $16B valuation, reflecting the impact of our work.`,
+    company: 'Upwork',
+    duration: '2022 – Present',
+    role: 'Top Rated Plus Freelancer',
+    description: `In 2022, I embraced the freedom of independent work and launched my freelance practice on Upwork. 
+    As a Top Rated Plus freelancer, I’ve delivered 25+ AI and automation projects—from LLM-powered chatbots to computer vision pipelines—for startups and enterprises around the globe. 
+    Each project sharpened my ability to move fast, architect at scale, and push the boundaries of what intelligent systems can do in the real world.`,
   },
   {
-    company: 'Affirm',
-    duration: '2022 – 2023',
-    role: 'Senior Software Engineer',
-    description: `In 2022, I was promoted to Senior Software Engineer as Affirm crossed $1B in annual revenue and deepened its presence in the fintech landscape. 
-    I focused on making our platforms more resilient, driving backend improvements that supported millions of transactions with high availability. 
-    It was a period of fast-paced scaling and constant learning, where I honed my ability to deliver reliable systems in a high-growth environment.`,
-  },
-  {
-    company: 'Affirm',
+    company: 'PayPal',
     duration: '2020 – 2022',
-    role: 'Software Engineer II',
-    description: `In 2020, I stepped into an advanced role as Software Engineer II as Affirm raised a $500M Series G round and prepared to go public. 
-    I led initiatives to improve system performance and reliability, helping support the company's IPO in January 2021 and its expansion to major retail partnerships. 
-    During this period, Affirm's revenue more than doubled, and I learned how to build infrastructure that could scale with incredible velocity.`,
+    role: 'Software Engineer',
+    description: `In 2020, I joined PayPal, where I helped shape the future of digital finance. 
+    I worked across cloud-native systems and real-time payment orchestration—reengineering the mobile app experience and building resilient microservices for QR and Zettle-based payments.
+    My time at PayPal deepened my expertise in fintech infrastructure, security, and product-driven engineering at global scale.`,
   },
   {
-    company: 'Affirm',
-    duration: '2019 – 2020',
+    company: 'Boston Dynamics',
+    duration: '2018 – 2020',
     role: 'Software Engineer',
-    description: `I joined Affirm in 2019 at a pivotal moment as the company was gaining momentum in the Buy Now, Pay Later space. 
-    As part of the payments engineering team, I worked on building secure transaction flows and scaling backend services to handle a surge in demand. 
-    The experience gave me a front-row seat to Affirm's rapid growth and laid the groundwork for my advancement into a more senior role.`,
+    description: `Right out of Boston University, I began my career at Boston Dynamics—a place where science fiction meets reality. 
+    I developed real-time computer vision pipelines and backend systems for robotic platforms like Spot, interfacing with sensors and streaming architectures that powered autonomous behavior.
+    It was here that I first saw the thrill and challenge of building intelligent systems at the edge, and it sparked a lifelong passion for applied AI.`,
   },
 ];
+
 
 const WorkHistory: React.FC = () => {
   const [circleY, setCircleY] = useState(0);

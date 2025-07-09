@@ -3,27 +3,24 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const timelineBlocks = [
   {
-    title: 'From Shanghai to Michigan',
-    imageSrc: '/images/selfie/michigan_graudate.jpeg',
+    title: 'From Singapore To Boston',
+    imageSrc: '/images/selfie/boston_graduate.jpeg',
     reverse: false,
     description: (
       <>
-     I was born in Shanghai, always curious about how things worked—taking apart toys, playing with gadgets, and asking “why” more than anyone wanted to hear.
-     In my teens, I stumbled into coding and instantly loved how it let me build things from scratch, just by typing on a screen.
-     That spark took me all the way to University of Michigan in 2015, where I studied Computer Science and began turning that curiosity into a career.
+        I was born in Singapore, where an early fascination with technology took root.
+        In 2014, at the age of 18, I began my journey at Boston University—marking the start of my academic and professional exploration.
       </>
     ),
-  },  
+  },
   {
-    title: 'From Enterprise to Innovation',
-    imageSrc: '/images/selfie/enterprise_building.jpg', // swap in an image representing enterprise systems or fintech infrastructure
+    title: 'The Lego Spark and Enterprise Foundations',
+    imageSrc: '/images/lego_robot.jpg',
     reverse: true,
     description: (
       <>
-         I started my journey at Affirm, stepping into the world of enterprise systems and high-stakes financial products. 
-          It was where I learned what it meant to build reliable, secure infrastructure that millions of people count on every day. 
-          Designing payment flows and scaling microservices taught me how much craft goes into making something feel seamless. 
-          Over time, I realized I wanted to carry those lessons into faster-moving teams where I could help shape products end to end.
+        My passion for building, first sparked by Lego bricks, naturally evolved into designing intelligent systems at scale.
+        That passion led me to <strong>Boston Dynamics</strong> and <strong>PayPal</strong> after graduating from Boston University, where I had the incredible opportunity to help engineer robotics pipelines and cloud-native fintech platforms—products that serve millions with precision and impact.
       </>
     ),
   },  
@@ -39,19 +36,16 @@ const timelineBlocks = [
         She's brought balance to my life, a calm counterpoint to my drive. Whether we're hiking, cooking, or just quietly reading side by side, I've found a new kind of fulfillment—one that no line of code could ever match.
       </>
     ),
-  },  
+  },
   {
     title: 'Pushing the Boundaries of AI',
     imageSrc: '/images/selfie/me_2025.jpeg',
     reverse: true,
     description: (
-      <>
-        At Ramp, I’m focused on bringing AI into the core of financial operations. 
-        I’ve led workflows powered by GPT-4 to automate expense processing and contract analysis, helping teams move faster without losing accuracy. 
-        It’s exciting to be building systems that make work smarter and set a new standard for modern finance.
-      </>
-    ),
-  },
+      <>I'm currently working as a Top Rated Plus freelancer on Upwork, tackling a wide range of challenging AI, LLM, and automation projects 
+      for diverse clients and startups.</>
+    ),    
+  },  
 ];
 
 const LifeIntro: React.FC = () => {

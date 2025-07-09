@@ -1,15 +1,15 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Anthony",
-  lastName: "Huang",
+  firstName: "Jeremy",
+  lastName: "Jacob",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Senior Software Engineer",
   avatar: "/images/avatar.jpg",
-  email: "a.huang97808@gmail.com",
-  location: "New York, NY", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  email: "jjtech.us8@gmail.com",
+  location: "Rockport, MA", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English"], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -35,7 +35,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/anthuang",
+    link: "",
   },
   {
     name: "Email",
@@ -58,7 +58,7 @@ const home = {
   // },
   subline: (
     <>
-      I'm a senior software engineer with a passion for building bold, startup-driven systems across web, cloud, and beyond.
+      I'm a senior software engineer with a focus on full stack systems, AI-powered automation, and intelligent backends that scale across cloud platforms.
     </>
   ),
 };
