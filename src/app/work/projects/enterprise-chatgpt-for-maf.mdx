@@ -1,0 +1,91 @@
+---
+title: "Deploying MAFGPT: Enterprise ChatGPT for Majid Al Futtaim"
+publishedAt: "2024-05-10"
+summary: "Delivered a secure, ChatGPT-style AI assistant for Majid Al Futtaim’s internal teams and client-facing operations—powered by LLM pipelines, retrieval-augmented generation, and scalable infra for multilingual support."
+images:
+  - "/images/projects/project-mafgpt/cover-01.png"
+  - "/images/projects/project-mafgpt/cover-02.webp"
+  - "/images/projects/project-mafgpt/cover-03.jpg"
+team:
+  - name: "Jeremy Jacob"
+    role: "AI & Platform Engineer"
+    avatar: "/images/avatar.jpg"
+  - name: "Majid Al Futtaim"
+    role: "Retail & Real Estate Conglomerate"
+    avatar: "/images/projects/project-mafgpt/maf-logo.png"
+link: "https://www.majidalfuttaim.com/"
+---
+
+## Bringing Enterprise AI to the Middle East
+
+*MAFGPT* is a custom, secure large language model platform developed for **Majid Al Futtaim (MAF)**—one of the UAE’s largest private companies. Modeled after ChatGPT, MAFGPT serves internal employees and external clients across business units like retail, real estate, and entertainment.
+
+It offers real-time, intelligent responses for FAQs, operations, HR, procurement, and customer support—all within a private cloud environment.
+
+<Carousel
+  images={[
+    { src: "/images/projects/project-mafgpt/maf.jpeg", alt: "Majid Al Futtaim" }
+  ]}
+/>
+
+## The Challenge: Secure, On-Brand Generative AI
+
+MAF wanted to bring LLM-powered chat capabilities to its thousands of employees and customer service agents—but faced key enterprise constraints:
+- 🛡️ **Data privacy & security**: No sensitive information could leave UAE-based clouds
+- 🌍 **Multilingual support**: Needed to serve users in Arabic and English
+- 🧠 **Custom knowledge base**: Must reference MAF-specific docs, policies, and internal SOPs
+- 👩‍💼 **Role-aware conversations**: Different user groups (e.g. HR, Retail Ops) needed tailored behaviors
+
+## What I Delivered
+
+I led full-stack and AI implementation efforts to bring MAFGPT from prototype to production:
+- Designed a **LangChain-based agent** with tools for summarization, internal doc search, and form generation
+- Implemented **RAG pipelines** using a secure **vector database**, supporting thousands of internal PDFs and SharePoint sources
+- Built the frontend interface with **React + Next.js**, styled to match MAF’s internal brand system
+- Integrated **Azure OpenAI** for LLM APIs, deployed entirely on **private Azure cloud** for regional compliance
+- Developed **admin dashboards** for prompt versioning, usage tracking, and role-based access control
+
+<Carousel
+  images={[
+    { src: "/images/projects/project-mafgpt/gpt-dashboard.png", alt: "MAFGPT Dashboard" }
+  ]}
+/>
+
+## Features Shipped
+
+- ✨ **ChatGPT-like interface** with full conversational memory and rephrasing support  
+- 📚 **Document-grounded responses** using internal knowledge, policy manuals, and SOPs  
+- 🌐 **Arabic + English support** with auto-language detection  
+- 🔐 **Private cloud deployment** with GDPR and UAE compliance  
+- 📈 **Admin analytics and controls** for usage monitoring and prompt tuning  
+
+## Outcome
+
+- 🧑‍💼 Rolled out to 10,000+ internal users across departments  
+- 💬 Reduced support ticket load by 35% through LLM self-service  
+- 🚀 Empowered customer service teams with 24/7 AI response capabilities  
+- ✅ Passed all internal compliance/security audits for cloud data handling
+
+<Carousel
+  images={[
+    { src: "/images/projects/project-mafgpt/chatgpt-impact.jpg", alt: "Internal rollout success metrics" }
+  ]}
+/>
+
+## Tech Stack
+
+- **AI/LLM**: Azure OpenAI (GPT-4), LangChain, FAISS, Hugging Face Transformers  
+- **Backend**: Python, FastAPI, PostgreSQL  
+- **Frontend**: React, Next.js, Chakra UI  
+- **Cloud**: Azure Private Cloud, Azure Functions, Key Vault, Blob Storage  
+- **Security**: OAuth2, RBAC, regional data isolation
+
+## Why Now?
+
+With growing demand for AI in the enterprise—and strict regional regulations—MAF needed a secure, multilingual LLM solution aligned with their business scale and cultural context. *MAFGPT* delivers this vision: safe, private, and intelligent automation embedded directly into everyday workflows.
+
+<Carousel
+  images={[
+    { src: "/images/projects/project-mafgpt/enterprise-ai.webp", alt: "Vision for enterprise AI in MENA" }
+  ]}
+/>

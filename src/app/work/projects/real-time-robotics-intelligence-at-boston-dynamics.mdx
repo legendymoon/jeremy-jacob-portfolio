@@ -1,0 +1,86 @@
+---
+title: "Building Real-Time Robotics Intelligence at Boston Dynamics"
+publishedAt: "2020-03-01"
+summary: "Developed real-time computer vision and data streaming systems at Boston Dynamics to enable autonomous behavior in robotics platforms like Spot. Delivered scalable AI pipelines and backend services for mission-critical perception tasks."
+images:
+  - "/images/projects/project-boston/cover-01.jpeg"
+  - "/images/projects/project-boston/cover-02.jpg"
+  - "/images/projects/project-boston/cover-03.webp"
+team:
+  - name: "Jeremy Jacob"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+  - name: "Boston Dynamics"
+    role: "Robotics & Perception Engineering"
+    avatar: "/images/projects/project-boston/boston-logo.webp"
+link: "https://www.bostondynamics.com/spot"
+---
+
+## Engineering Perception for the Real World
+
+At *Boston Dynamics*, I worked on the cutting edge of robotics—building backend and vision systems for Spot that allowed it to interpret and react to its environment in real time.
+
+<Carousel
+  images={[{ src: "/images/projects/project-boston/boston-spot.jpg", alt: "Boston Dynamic's Spot"}]}
+/>
+
+## Real-Time Vision with TensorFlow and OpenCV
+
+I built **computer vision pipelines** for object detection and spatial awareness, leveraging:
+- **TensorFlow**, **YOLO**, and **OpenCV**
+- Live camera feeds and sensor fusion for real-time inference
+- Optimized models to run on embedded hardware in edge conditions
+
+These systems enabled Spot to recognize obstacles, navigate dynamic environments, and carry out tasks with precision.
+
+<Carousel
+  images={[{ src: "/images/projects/project-boston/spot-vision.jpg", alt: "Spot navigating terrain with vision system"}]}
+/>
+
+## Sensor Data Streaming and Model Interfaces
+
+Designed and implemented backend modules using:
+- **gRPC** and **Protobuf** for efficient sensor data communication
+- Interfaces to external model servers for continuous inference
+- Modular, low-latency systems to maintain performance in high-noise environments
+
+This architecture allowed for fast data retrieval, processing, and decision-making critical to autonomous behavior.
+
+<Carousel
+  images={[{ src: "/images/projects/project-boston/streaming.jpg", alt: "Sensor data streaming infrastructure"}]}
+/>
+
+## Edge-Based AI Model Deployment
+
+Managed cloud workflows and on-device deployment pipelines using:
+- **AWS IoT Greengrass**
+- Custom CI/CD pipelines for model training and deployment
+- Automated dataset uploads and telemetry monitoring
+
+This enabled us to update models in the field, adapt to new environments, and reduce development cycle times.
+
+<Carousel
+  images={[{ src: "/images/projects/project-boston/edge-compute.png", alt: "Spot running AI on the edge"}]}
+/>
+
+## Technologies Used
+
+- **Python, C++**: Core programming for robotics and system-level code
+- **TensorFlow, YOLO, OpenCV**: Vision model training and inference
+- **gRPC, Protobuf**: Sensor data communication
+- **AWS IoT Greengrass**: Model deployment and device management
+- **Linux, ROS**: Runtime and robotics integration
+
+## Outcome
+
+- 🤖 Enabled real-time vision capabilities in production deployments of Spot
+- ⚙️ Built scalable backend modules for data streaming and processing
+- 🚀 Delivered fast, reliable pipelines that empowered autonomy at the edge
+
+<Carousel
+  images={[{ src: "/images/projects/project-boston/boston-techcrunch.jpg", alt: "Boston Dynamics at Tech Crunch"}]}
+/>
+
+## Challenges and Learnings
+
+Working with real-time robotics required reconciling the unpredictability of the physical world with the rigor of production systems. I learned to optimize for latency, fault tolerance, and modularity—laying a strong foundation for future AI-first systems that operate under real-world constraints.

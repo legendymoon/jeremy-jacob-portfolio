@@ -1,0 +1,86 @@
+---
+title: "Creating a Digital Twin for Avori Henderson"
+publishedAt: "2024-02-15"
+summary: "Developed an AI-powered replica of Avori Henderson—integrating her voice, facial likeness, and persona into a fully interactive fan engagement experience using LLMs, ElevenLabs, Synthesia, and custom avatar workflows."
+images:
+  - "/images/projects/project-avori/cover-01.jpg"
+  - "/images/projects/project-avori/cover-02.webp"
+  - "/images/projects/project-avori/cover-03.jpg"
+team:
+  - name: "Jeremy Jacob"
+    role: "AI & Avatar Engineer"
+    avatar: "/images/avatar.jpg"
+  - name: "Avori Henderson"
+    role: "Gamer, Streamer, Creator"
+    avatar: "/images/projects/project-avori/avori-logo.jpg"
+link: "https://www.instagram.com/avori/"
+---
+
+## An AI Persona Built for Fans
+
+Working directly with *Avori Henderson*—gamer, influencer, and TV personality—I built a hyper-personalized **AI replica** that allows her to interact with fans 24/7. The digital version of Avori uses her real voice and facial likeness, delivering a fully immersive fan experience powered by LLMs and multimodal AI.
+
+The avatar captures her tone, personality, and conversational style—bridging the gap between creators and their community through next-gen engagement.
+
+<Carousel
+  images={[
+    { src: "/images/projects/project-avori/ai-avatar-demo.avif", alt: "Avori AI avatar preview" }
+  ]}
+/>
+
+## Problem: Scalable Creator-Fan Connection
+
+Influencers face increasing demand to connect personally with fans, but time, availability, and reach limit how much they can interact. We wanted to create:
+- 🗣️ A **replica of Avori’s voice** for real-time dialogue
+- 🎥 A **video avatar** that mimics her expressions and personality
+- 🧠 A smart LLM agent trained on her content, tone, and FAQs
+- 🌎 A platform-agnostic solution that can live on Twitch, Discord, and custom sites
+
+## My Contribution
+
+I led the full pipeline—from data collection to avatar deployment:
+- Used **ElevenLabs** for ultra-realistic voice cloning based on custom studio audio
+- Built a facial avatar using **Synthesia** and custom mouth/keyframe tuning
+- Designed **LLM prompts and memory layers** to reflect her tone and preferred responses
+- Built the web-based chat interface using **React** and **Next.js**, and wired backend APIs in **Node.js** and **Python**
+- Integrated **vector search** and **content retrieval** trained on her interviews, streams, and brand guidelines
+
+## Features Delivered
+
+- 🎤 **AI chat with Avori’s voice** via ElevenLabs streaming
+- 🎬 **Responsive video avatar** that blinks, speaks, and reacts naturally
+- 💬 **Conversational LLM agent** trained on her bio, public content, and Q&A history
+- 🌐 **Cross-platform interface** deployable to fan sites, Twitch bots, and Discord
+- 🧠 **Memory-enabled threads** for fan personalization and contextual replies
+
+<Carousel
+  images={[
+    { src: "/images/projects/project-avori/avatar-in-action.jpg", alt: "Live fan interaction demo" }
+  ]}
+/>
+
+## Impact & Engagement
+
+- 📈 10x engagement during launch week across Avori’s social platforms  
+- 💡 Gained brand partnerships leveraging the AI avatar for sponsored Q&As  
+- 🕒 24/7 fan access without increasing creator workload  
+- 🚀 Positioned as a replicable model for creators seeking intelligent, interactive clones
+
+## Tech Stack
+
+- **Voice**: ElevenLabs  
+- **Avatar Video**: Synthesia, custom CSS + JS keyframe tuning  
+- **LLMs**: GPT-4, LangChain, Vector DBs (e.g., Pinecone)  
+- **Frontend**: React, Next.js, TailwindCSS  
+- **Backend**: Node.js, Python (FastAPI)  
+- **Infra**: Vercel, Cloudflare Functions, S3, FFmpeg
+
+## Why Now?
+
+In a world where creators scale globally but connection still feels personal, *AI avatars* like Avori’s bridge that divide. This project shows how human expression, powered by ethical AI, can expand presence, deepen fan loyalty, and unlock a new kind of interaction—authentic, available, and unforgettable.
+
+<Carousel
+  images={[
+    { src: "/images/projects/project-avori/future-of-ai-creation.webp", alt: "The future of creator-AI interaction" }
+  ]}
+/>
