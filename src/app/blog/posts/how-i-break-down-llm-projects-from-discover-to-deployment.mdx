@@ -1,0 +1,133 @@
+---
+title: "How I Break Down LLM Projects From Discovery to Deployment"
+summary: "Building with language models isn't just about prompts—it's about solving the right problem with the right structure. Here’s how I help clients scope, shape, and ship LLM-powered systems that actually work."
+publishedAt: "2024-07-10"
+tags: [ "Freelancing", "AI", "Tech" ]
+image: "/images/blog/llm-lifecycle/cover.webp"
+---
+
+## The Problem With Most AI Builds
+
+Everyone wants to “use AI” right now—but the path from idea to outcome isn’t always clear.
+
+I’ve worked with clients across industries—real estate, fintech, healthcare, retail, and creator platforms—and no matter how different the product is, the process of building with LLMs follows a surprisingly repeatable shape.
+
+In this post, I’ll show you how I break down LLM projects—**from messy input to production-grade agent**—in a way that’s fast, modular, and focused on what matters.
+
+<Carousel
+  images={[{ src: "/images/blog/llm-lifecycle/1.jpeg", alt: "Whiteboard flow of LLM architecture and scope" }]}
+/>
+
+## 1. Discovery: Aligning on What the AI Should Actually Do
+
+This is where most projects fall apart before they even start.
+
+Clients often ask:  
+> “Can we use GPT-4 to answer user questions?”  
+> “Can we summarize long docs automatically?”
+
+These are good instincts—but not yet scoped work.
+
+So I help clarify:
+- Who is the end user?
+- What information do they need that they don’t already have?
+- What should the AI do vs. what should the interface or backend handle?
+
+Outcome: **a defined user-action loop**, not just a prompt idea.
+
+---
+
+## 2. Data Grounding: What Does the AI Need to Know?
+
+LLMs like GPT-4 don’t know anything about *you* by default.
+
+So we define:
+- What documents, data, or context does the model need?
+- Does that data change often (e.g. product inventory) or rarely (e.g. company policies)?
+- Does the output need citations or explainability?
+
+If yes, we plan for **RAG (Retrieval-Augmented Generation)** early.
+
+<Carousel
+  images={[{ src: "/images/blog/llm-lifecycle/2.avif", alt: "Example of grounding flow using vector DB and fallback search" }]}
+/>
+
+## 3. Architecture Planning: Agent or Function?
+
+I decide early on:
+- Should we use **plain completion** (1-turn prompt)?
+- Or a **LangChain agent** with tool usage and memory?
+- Do we need streaming, vision, voice, or multilingual output?
+
+I diagram the flow:
+- Inputs → Preprocessing → Prompt strategy → Output handling → Post-processing or API chaining
+
+I choose tools like:
+- **LangChain**, **LlamaIndex**, **Haystack** (agent logic)
+- **Pinecone**, **Weaviate**, **Qdrant** (vector DBs)
+- **OpenAI**, **Claude**, **open-source models** (LLMs)
+
+Outcome: A scoped, testable LLM pipeline that works in modular layers.
+
+---
+
+## 4. Prototyping: Build Small, Test Fast
+
+The first thing I ship is **not a full app**.
+
+It’s usually a backend route + minimal UI (or console) to validate:
+- Is the model returning what we expect?
+- Are the retrievals accurate?
+- Are users confused or surprised by the output?
+
+This helps clients give real feedback before we spend time on polish or infra.
+
+<Carousel
+  images={[{ src: "/images/blog/llm-lifecycle/3.webp", alt: "Early prompt test output in dev console" }]}
+/>
+
+## 5. Feedback Loops: Logging + Learning
+
+Before going live, I build in:
+- **LLM logs** (prompt, input, output, latency, errors)
+- **User rating capture** (was this helpful?)
+- **Fallbacks** (e.g. rule-based logic if model fails or stalls)
+
+Why? Because LLM systems don’t just ship once—they evolve. I give clients the tools to tune and adapt over time.
+
+---
+
+## 6. Deployment: Real Infra, Real Access Control
+
+When it’s time to go live, I deploy with:
+- **Serverless backend** (e.g. AWS Lambda, GCP Cloud Functions)
+- **Rate-limiting + auth** for model endpoints
+- **Admin dashboards** to tweak temperature, token limits, prompt templates
+- **Multi-region deployments** if needed for latency or compliance
+
+<Carousel
+  images={[{ src: "/images/blog/llm-lifecycle/4.webp", alt: "Dashboard showing live usage and model tuning" }]}
+/>
+
+## Tools I Commonly Use
+
+- **LLMs**: GPT-4, Claude, Mixtral, LLaMA 3  
+- **Orchestration**: LangChain, LlamaIndex, custom agents  
+- **Embedding + RAG**: Pinecone, Weaviate, Qdrant, Supabase vector  
+- **Frontend**: React, Next.js, Tailwind  
+- **Backend**: Node.js, Python (FastAPI), Go  
+- **Infra**: Docker, Kubernetes, Terraform, Vercel, AWS
+
+---
+
+## Why This Works
+
+AI isn’t magic. It’s just another form of interface—with its own failure modes and architecture constraints.
+
+By breaking LLM projects into **user needs → data flow → system behavior → deployment**, I help clients move faster, avoid dead ends, and build systems that actually serve their customers.
+
+If you're thinking about launching your own AI feature or product, let’s start with the right question—not the fanciest model.
+
+<Carousel
+  images={[{ src: "/images/blog/llm-lifecycle/5.webp", alt: "LLM lifecycle from discovery to deployment flowchart" }]}
+/>

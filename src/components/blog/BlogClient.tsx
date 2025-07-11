@@ -7,8 +7,8 @@ import { Posts } from "./Posts";
 const tagMap = {
   all: "",
   personal: "Personal",
-  career: "Career",
-  startups: "Startups",
+  freelancing: "Freelancing",
+  client: "Client",
   ai: "AI",
   innovation: "Innovation",
   programming: "Programming",
@@ -27,8 +27,8 @@ export default function BlogClient({ allPosts }: { allPosts: any[] }) {
         buttons={[
           { value: "all", label: "All" },
           { value: "personal", label: "Personal" },
-          { value: "career", label: "Career" },
-          { value: "startups", label: "Startups" },
+          { value: "client", label: "Client" },
+          { value: "freelancing", label: "Freelancing" },
           { value: "ai", label: "AI" },
           { value: "innovation", label: "Innovation" },
           { value: "programming", label: "Programming" },
